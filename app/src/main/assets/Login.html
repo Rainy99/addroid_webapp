@@ -1,0 +1,56 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- 网页宽度默认为设备屏幕宽度，原始缩放比为1（网页初始大小占屏幕的100%） -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<heml>
+	<head>
+		<title></title>
+		<style type="text/css">
+			article{
+				width:100%;
+				height:500px;
+			}
+			article form{
+				margin-top:10%;
+				position:relative;
+				repeat-x：45%;
+				repeat-y:45%;
+				border:2px solid pink;
+			}
+			.cnt{
+				width:100%;
+			}
+			#btn{
+				width:20%;
+				height:15%;
+				margin-left:45%;
+			}
+			.m{
+				margin-left:5%;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<form>
+				<p class="m">请先登录</p>
+				<p class="m">用户名：</p>
+				<p>
+					<input type="text" class="cnt"/>
+				</p>
+				<p class="m">密码：</p>
+				<p>
+					<input type="password" class="cnt"/>
+				</p>
+				<p>
+					<input type="button" value="登录" id="btn" onclick="isOk()">
+				</p>
+			</form>
+		</article>
+		<script type="text/javascript">
+			function isOk(){
+				alert("登录成功！");
+			}
+		</script>
+	</body>
+</heml>
